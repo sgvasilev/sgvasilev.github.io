@@ -3,6 +3,7 @@ export const lightTheme = {
   text: "#0b0c10",
   toggleBorder: "#FFF",
   background: "#eae7dc",
+  backgroundColor: "#eae7dc",
 };
 
 //textcolor #0b0c10
@@ -12,6 +13,7 @@ export const darkTheme = {
   text: "#eae7dc",
   toggleBorder: "#0b0c10",
   background: "#0b0c10",
+  backgroundColor: "#0b0c10",
 };
 //darkcolors #8e8d8a,
 // redcolors #e98074

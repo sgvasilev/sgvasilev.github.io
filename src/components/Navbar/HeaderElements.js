@@ -12,6 +12,7 @@ export const Navbar = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  background-color: inherit;
 
   @media screen and (max-width: 960px) {
     transition: 0.3s all ease;

@@ -17,7 +17,7 @@ const Nav = ({ toggleTheme }) => {
       <Navbar>
         <NavbarContainer>
           <NavLogo to="/">
-            <FaDrawPolygon size={32} />
+            <FaDrawPolygon size={40} />
           </NavLogo>
           <MobileIcon>
             <FaBars size={32} />
@@ -27,13 +27,13 @@ const Nav = ({ toggleTheme }) => {
               <MenuLink to="about">About me</MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="resume">resume</MenuLink>
+              <MenuLink to="resume">Resume</MenuLink>
             </MenuItem>
             <MenuItem>
               <MenuLink to="contact">Contact</MenuLink>
             </MenuItem>
             <NavChangeTheme onClick={toggleTheme}>
-              <FaSun size={32} style={{ fill: "", background: "inherit" }} />
+              <FaSun size={40} style={{ fill: "", background: "inherit" }} />
             </NavChangeTheme>
           </MenuMobile>
         </NavbarContainer>
