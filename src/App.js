@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./components/ThemeSwitch/globalStyles";
 import { lightTheme, darkTheme } from "./components/ThemeSwitch/Themes";
-import "./app.css";
+import "./App.css";
 
 import Nav from "./components/Navbar";
 import { useDarkMode } from "./components/ToggleTheme/useDarkMode";
