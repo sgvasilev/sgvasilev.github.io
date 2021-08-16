@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import { ThemeProvider } from "styled-components";
@@ -7,28 +6,20 @@ import { lightTheme, darkTheme } from "./components/ThemeSwitch/Themes";
 import "./app.css";
 
 import Nav from "./components/Navbar";
+import { useDarkMode } from "./components/ToggleTheme/useDarkMode";
+import Toggle from "./components/ToggleTheme/Toggler";
 
 function App() {
-  const [theme, setTheme] = useState(localStorage.getItem("Theme"));
-  const themeToggler = () => {
-    if (theme === "light") {
-      setTheme("dark");
-      localStorage.setItem("Theme", "dark");
-    } else {
-      setTheme("light");
-      localStorage.setItem("Theme", "light");
-    }
-  };
-
-  useEffect(() => {}, [theme]);
+  const [theme, themeToggler] = useDarkMode();
+  const themeMode = theme === "light" ? lightTheme : darkTheme;
 
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={themeMode}>
       <>
         <GlobalStyles />
         <Router>
-          <Nav />
-          <button onClick={themeToggler}>Switch Theme</button>
+          <Nav></Nav>
+          <Toggle theme={theme} toggleTheme={themeToggler} />
         </Router>
       </>
     </ThemeProvider>

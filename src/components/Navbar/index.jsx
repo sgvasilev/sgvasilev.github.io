@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { FaBars, FaDrawPolygon, FaSun } from "react-icons/fa";
-import { BrowserRouter as Router } from "react-router-dom";
+import React from "react";
+import { FaBars, FaDrawPolygon } from "react-icons/fa";
 import {
   Navbar,
   NavbarContainer,
@@ -9,7 +8,6 @@ import {
   MenuMobile,
   MenuItem,
   MenuLink,
-  NavChangeTheme,
 } from "./HeaderElements";
 
 const Nav = () => {
@@ -33,9 +31,6 @@ const Nav = () => {
             <MenuItem>
               <MenuLink to="contact">Contact</MenuLink>
             </MenuItem>
-            <NavChangeTheme>
-              <FaSun size={32} />
-            </NavChangeTheme>
           </MenuMobile>
         </NavbarContainer>
       </Navbar>

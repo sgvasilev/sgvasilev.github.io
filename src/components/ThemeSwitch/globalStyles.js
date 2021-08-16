@@ -4,6 +4,6 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     font-family:  Alegreya, Helvetica, Arial, Roboto, sans-serif;
-    transition: background 0.30s linear, color 0.50s linear;
+    transition: background 0.30s linear, color 0.30s linear;
   }
   `;

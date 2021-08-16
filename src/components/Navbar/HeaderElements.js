@@ -14,7 +14,7 @@ export const Navbar = styled.nav`
   z-index: 10;
 
   @media screen and (max-width: 960px) {
-    transition: 1s all ease;
+    transition: 0.3s all ease;
   }
 `;
 
@@ -80,15 +80,10 @@ export const MenuLink = styled(LinkScroll)`
   align-items: center;
   height: 100%;
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 
   &.active {
     border-bottom: 3px solid #232323;
   }
-`;
-
-export const NavChangeTheme = styled.button`
-  cursor: pointer;
-  background: transparent;
-  border: none;
 `;
