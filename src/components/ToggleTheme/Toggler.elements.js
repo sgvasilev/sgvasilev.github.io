@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const NavChangeTheme = styled.button`
   display: flex;
-
   color: inherit;
   cursor: pointer;
   background: transparent;

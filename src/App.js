@@ -7,7 +7,6 @@ import "./app.css";
 
 import Nav from "./components/Navbar";
 import { useDarkMode } from "./components/ToggleTheme/useDarkMode";
-import Toggle from "./components/ToggleTheme/Toggler";
 
 function App() {
   const [theme, themeToggler] = useDarkMode();
@@ -18,8 +17,7 @@ function App() {
       <>
         <GlobalStyles />
         <Router>
-          <Nav></Nav>
-          <Toggle theme={theme} toggleTheme={themeToggler} />
+          <Nav toggleTheme={themeToggler}></Nav>
         </Router>
       </>
     </ThemeProvider>

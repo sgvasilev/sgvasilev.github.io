@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBars, FaDrawPolygon } from "react-icons/fa";
+import { FaBars, FaSun, FaDrawPolygon } from "react-icons/fa";
 import {
   Navbar,
   NavbarContainer,
@@ -8,9 +8,10 @@ import {
   MenuMobile,
   MenuItem,
   MenuLink,
+  NavChangeTheme,
 } from "./HeaderElements";
 
-const Nav = () => {
+const Nav = ({ toggleTheme }) => {
   return (
     <>
       <Navbar>
@@ -31,6 +32,9 @@ const Nav = () => {
             <MenuItem>
               <MenuLink to="contact">Contact</MenuLink>
             </MenuItem>
+            <NavChangeTheme onClick={toggleTheme}>
+              <FaSun size={32} style={{ fill: "", background: "inherit" }} />
+            </NavChangeTheme>
           </MenuMobile>
         </NavbarContainer>
       </Navbar>
