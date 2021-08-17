@@ -11,7 +11,7 @@ import {
   NavChangeTheme,
 } from "./HeaderElements";
 
-const Nav = ({ toggleTheme }) => {
+const Nav = ({ toggleTheme, toggleMobileMenu }) => {
   return (
     <>
       <Navbar>
@@ -20,7 +20,7 @@ const Nav = ({ toggleTheme }) => {
             <FaDrawPolygon size={40} />
           </NavLogo>
           <MobileIcon>
-            <FaBars size={32} />
+            <FaBars onClick={toggleMobileMenu} size={32} />
           </MobileIcon>
           <MenuMobile>
             <MenuItem>

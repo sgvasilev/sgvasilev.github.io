@@ -11,8 +11,8 @@ export const Navbar = styled.nav`
   font-size: 1rem;
   position: sticky;
   top: 0;
-  z-index: 10;
-  background-color: inherit;
+  z-index: 40;
+  background: inherit;
 
   @media screen and (max-width: 960px) {
     transition: 0.3s all ease;
@@ -24,7 +24,7 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  z-index: 1;
+
   width: 100%;
   padding: 0 25px;
   max-width: 1070px;
@@ -96,5 +96,5 @@ export const NavChangeTheme = styled.button`
   background: transparent;
   border: none;
 
-  transition: background 0.3s linear, color 0.3s linear;
+  transition: background 0.1s linear, color 0.1s linear;
 `;
