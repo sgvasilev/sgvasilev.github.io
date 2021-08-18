@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { AnimateSharedLayout } from "framer-motion";
 
 import { startPositionMenu, menuItemBehavior, iconVariants } from "./variants";
@@ -11,8 +11,6 @@ import {
 } from "./sidebar.elements";
 
 const Sidebar = ({ isOpen, toggleMobileMenu }) => {
-  const [isLinks, setLinks] = useState(false);
-
   return (
     <SidebarContainer
       variants={startPositionMenu}

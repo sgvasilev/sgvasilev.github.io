@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
-import { Link as LinkScroll } from "react-scroll";
+//import { Link as LinkScroll } from "react-scroll";
 
 export const SidebarContainer = styled(motion.aside)`
   display: flex;

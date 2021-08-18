@@ -29,3 +29,12 @@ body.preload * {
 #root {
   background: inherit;
 }
+
+.scroll {
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.scroll__footer {
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+}

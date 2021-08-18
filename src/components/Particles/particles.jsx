@@ -12,7 +12,7 @@ class ParticlesDraw extends React.Component {
             params={{
               particles: {
                 number: {
-                  value: 150,
+                  value: 50,
                   density: {
                     enable: true,
                     value_area: 800,
@@ -36,7 +36,7 @@ class ParticlesDraw extends React.Component {
                   random: true,
                   anim: {
                     enable: true,
-                    speed: 5,
+                    speed: 1,
                     opacity_min: 0,
                     sync: false,
                   },
@@ -46,7 +46,7 @@ class ParticlesDraw extends React.Component {
                   random: true,
                   anim: {
                     enable: false,
-                    speed: 5,
+                    speed: 1,
                     size_min: 0.3,
                     sync: false,
                   },
@@ -60,7 +60,7 @@ class ParticlesDraw extends React.Component {
                 },
                 move: {
                   enable: true,
-                  speed: 2,
+                  speed: 1,
                   direction: "none",
                   random: true,
                   straight: false,

@@ -1,14 +1,16 @@
-import { ReactComponent as Logo } from "../../images/logo.svg";
+import { ReactComponent as Logo } from "../../images/1.svg";
 import styled from "styled-components";
 
 export const IntroContainer = styled.div`
   height: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 30px 0 30px;
   max-width: 1070px;
   z-index: 30;
-  margin: auto;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 375px) {
     margin: 0 25px 0 25px;
     justify-content: flex-start;
   }
@@ -18,25 +20,18 @@ export const LogoImg = styled(Logo)`
   //обводка телефона #1F2833
   fill: red;
   z-index: 35;
-  width: 500px;
+  width: 200px;
   position: relative;
-  right: -150px;
-  @media screen and (max-width: 1024px) {
-    width: 350px;
-    right: 0;
-  }
-  @media screen and (max-height: 667px) {
-    width: 250px;
-    right: 0;
-  }
+  flex: 1;
+  flex-basis: 40%;
 `;
 export const IntroContent = styled.div`
-  width: 100%;
-  justify-content: space-between;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin: 150px 100px 0px 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 30px 0 30px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -44,23 +39,67 @@ export const IntroContent = styled.div`
   }
 `;
 
-export const IntroP1 = styled.p`
+export const IntroH1 = styled.p`
+  font-size: 2.7rem;
   display: flex;
-  margin: 0;
-  font-size: 2rem;
-  display: flex;
-  z-index: 33;
+  justify-self: center;
+  text-align: center;
+  z-index: 32;
+
+  @media screen and (max-width: 375px) {
+    font-size: 2rem;
+  }
 `;
 
-export const IntroH1 = styled.h1`
-  margin: 0;
-  font-size: 3rem;
-  display: flex;
-  z-index: 33;
-`;
-
-export const IntroTextArea = styled.p`
+export const IntroTextArea = styled.div`
+  height: 40vh;
+  align-items: center;
+  text-align: center;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+`;
+
+export const IntroP1 = styled.p`
+  width: 100%;
+  display: flex;
+  text-align: left;
+  font-size: 1.5rem;
+  flex: 1;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 1.5rem;
+  }
+`;
+
+export const IntroP2 = styled.p`
+  display: flex;
+  font-size: 1.6rem;
+  text-align: left;
+  flex: 1;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+`;
+
+export const TextContainer = styled.div`
+  display: flex;
+  flex: 2;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const ImageContainer = styled.div`
+  display: flex;
+`;
+
+export const Container = styled.div`
+  margin: auto;
+  max-width: 1070px;
 `;
