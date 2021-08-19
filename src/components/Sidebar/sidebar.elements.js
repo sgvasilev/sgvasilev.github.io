@@ -25,7 +25,6 @@ export const FaTimesIcon = styled(FaTimes)`
 export const CloseIcon = styled(motion.div)`
   position: absolute;
   display: flex;
-  //padding: 20px 25px 0 0;
   margin: 20px 20px 0 auto;
   background: transparent;
 `;
