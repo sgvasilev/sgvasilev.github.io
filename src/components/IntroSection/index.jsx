@@ -26,8 +26,8 @@ const Intro = () => {
               <IntroP2>
                 О себе: интерес к computer science с рассказов Кевина Митника и
                 Криса Касперски с 7 класса, закончил технический ВУЗ в 2020 г.,
-                неплохо знаю английский, в настоящее время изучаю
-                React/JS/flutter.
+                знаю английский на уровне B-2, стремлюсь к fullstack developer`у
+                и в настоящее время изучаю React/JS/flutter.
               </IntroP2>
             </TextContainer>
             <ImageContainer>
