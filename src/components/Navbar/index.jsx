@@ -35,12 +35,13 @@ const Nav = ({ toggleTheme, toggleMobileMenu }) => {
     <>
       <Navbar className={`${scroll ? "scroll" : ""}`}>
         <NavbarContainer>
-          <NavLogo>
+          <NavLogo to="main" smooth={true} offset={-120}>
             <FaDrawPolygon size={40} />
           </NavLogo>
           <MobileIcon>
             <FaBars onClick={toggleMobileMenu} size={32} />
           </MobileIcon>
+
           <MenuMobile>
             <MenuItem>
               <MenuLink to="main" smooth={true} offset={-100}>

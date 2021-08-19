@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
-import { Link as LinkRouter } from "react-router-dom";
 
 export const Navbar = styled.nav`
   height: 80px;
@@ -29,7 +28,7 @@ export const NavbarContainer = styled.div`
   max-width: 1070px;
 `;
 
-export const NavLogo = styled(LinkRouter)`
+export const NavLogo = styled(LinkScroll)`
   color: inherit;
   display: flex;
   justify-self: flex-start;

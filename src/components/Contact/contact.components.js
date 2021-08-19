@@ -11,7 +11,7 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactText = styled.span`
-  margin-top: 50px;
+  margin-top: 100px;
   display: flex;
   font-size: 2.2rem;
   font-weight: bold;

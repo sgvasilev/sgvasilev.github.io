@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
-//import { Link as LinkScroll } from "react-scroll";
+import { Link as LinkScroll } from "react-scroll";
 
 export const SidebarContainer = styled(motion.aside)`
   display: flex;
@@ -30,12 +30,13 @@ export const CloseIcon = styled(motion.div)`
   background: transparent;
 `;
 
-export const SidebarItem = styled(motion.LinkScroll)`
+export const SidebarItem = styled(motion.li)`
   align-items: center;
-  margin-top: 50px;
+  margin-bottom: 50px;
   cursor: pointer;
   font-size: 2.5rem;
   color: #66fcf1;
+  list-style: none;
 
   @media screen and (max-width: 400px) {
     font-size: 2rem;
@@ -57,3 +58,5 @@ export const SidebarMenu = styled.ul`
   align-items: center;
   width: 100%;
 `;
+
+export const SideBarWrapper = styled(LinkScroll)``;
