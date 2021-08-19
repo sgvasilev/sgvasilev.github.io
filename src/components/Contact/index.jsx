@@ -17,7 +17,10 @@ const Contact = () => {
           sendto.vasilevsg@gmail.com
         </ContactEmail>
         <ContactInfo>
-          <ContactItem href="http://github.com" title="Github account">
+          <ContactItem
+            href="https://github.com/sgvasilev"
+            title="Github account"
+          >
             <FaGithub size={50} />
           </ContactItem>
           <ContactItem href="./cv.pdf" download="" title="Скачать резюме">
