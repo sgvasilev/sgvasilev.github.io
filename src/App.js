@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, Suspense } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import { ThemeProvider } from "styled-components";
@@ -10,9 +10,12 @@ import Nav from "./components/Navbar";
 import { useDarkMode } from "./components/ToggleTheme/useDarkMode";
 import Sidebar from "./components/Sidebar";
 import Intro from "./components/IntroSection";
-import Skills from "./components/skills/";
+
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+
+//import Skills from "./components/skills/";
+const Skills = React.lazy(() => import("./components/skills"));
 
 function App() {
   const [theme, themeToggler] = useDarkMode();
@@ -31,16 +34,18 @@ function App() {
       <>
         <GlobalStyles />
         <Router>
-          <Sidebar toggleMobileMenu={toggleMobileMenu} isOpen={isOpen} />
-          <Nav
-            toggleTheme={themeToggler}
-            toggleMobileMenu={toggleMobileMenu}
-          ></Nav>
-          <Intro />
+          <Suspense fallback={<p>Loading...</p>}>
+            <Sidebar toggleMobileMenu={toggleMobileMenu} isOpen={isOpen} />
+            <Nav
+              toggleTheme={themeToggler}
+              toggleMobileMenu={toggleMobileMenu}
+            ></Nav>
+            <Intro />
 
-          <Skills />
-          <Contact />
-          <Footer />
+            <Skills />
+            <Contact />
+            <Footer />
+          </Suspense>
         </Router>
       </>
     </ThemeProvider>
