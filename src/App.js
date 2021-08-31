@@ -14,7 +14,6 @@ import Intro from "./components/IntroSection";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 
-//import Skills from "./components/skills/";
 const Skills = React.lazy(() => import("./components/skills"));
 
 function App() {
