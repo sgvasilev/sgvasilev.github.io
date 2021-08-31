@@ -5,4 +5,4 @@
 - Framer motion
 - Javascript
 
-![Иллюстрация к проекту](https://github.com/sgvasilev/portfolio/raw/main/images/site2.png)
+<img url="https://github.com/sgvasilev/portfolio/raw/main/images/site2.png" alt="drawing" style="width:200px;"/>
