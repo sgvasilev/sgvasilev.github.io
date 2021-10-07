@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { FaBars, FaSun, FaDrawPolygon } from "react-icons/fa";
+import React, { useEffect, useState } from 'react'
+import { FaBars, FaSun, FaDrawPolygon } from 'react-icons/fa'
 import {
   Navbar,
   NavbarContainer,
@@ -9,33 +9,33 @@ import {
   MenuItem,
   MenuLink,
   NavChangeTheme,
-} from "./HeaderElements";
+} from './HeaderElements'
 
 const Nav = ({ toggleTheme, toggleMobileMenu }) => {
-  const [scroll, setScroll] = useState(false);
+  const [scroll, setScroll] = useState(false)
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, { passive: true })
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   const handleScroll = () => {
-    const position = window.pageYOffset;
+    const position = window.pageYOffset
     if (position > 0) {
-      setScroll(true);
+      setScroll(true)
     } else {
-      setScroll(false);
+      setScroll(false)
     }
-  };
+  }
 
   return (
     <>
-      <Navbar className={`${scroll ? "scroll" : ""}`}>
+      <Navbar className={`${scroll ? 'scroll' : ''}`}>
         <NavbarContainer>
-          <NavLogo to="main" smooth={true} offset={-120}>
+          <NavLogo to='main' smooth={true} offset={-120}>
             <FaDrawPolygon size={40} />
           </NavLogo>
           <MobileIcon>
@@ -44,28 +44,28 @@ const Nav = ({ toggleTheme, toggleMobileMenu }) => {
 
           <MenuMobile>
             <MenuItem>
-              <MenuLink to="main" smooth={true} offset={-100}>
+              <MenuLink to='main' smooth={true} offset={-100}>
                 О себе
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="skills" smooth={true}>
+              <MenuLink to='skills' smooth={true}>
                 Навыки
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="contact" smooth={true} duration={1000}>
+              <MenuLink to='contact' smooth={true} duration={1000}>
                 Контакты
               </MenuLink>
             </MenuItem>
             <NavChangeTheme onClick={toggleTheme}>
-              <FaSun size={40} style={{ fill: "", background: "inherit" }} />
+              <FaSun size={40} style={{ fill: '', background: 'inherit' }} />
             </NavChangeTheme>
           </MenuMobile>
         </NavbarContainer>
       </Navbar>
     </>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav
