@@ -11,6 +11,13 @@
 /coverage
 
 # production
+/images
+/publick
+/src
+.gitignore
+.package-lock.json
+.package.json
+
 
 # misc
 .DS_Store
