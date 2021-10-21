@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
   position: relative;
@@ -7,7 +7,7 @@ export const FooterContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   height: 80px;
   flex: 0 0 auto;
-`;
+`

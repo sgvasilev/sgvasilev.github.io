@@ -45,17 +45,22 @@ const Nav = ({ toggleTheme, toggleMobileMenu }) => {
           <MenuMobile>
             <MenuItem>
               <MenuLink to='main' smooth={true} offset={-100}>
-                О себе
+                About me
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to='skills' smooth={true}>
-                Навыки
+              <MenuLink to='skills' smooth={true} offset={-100}>
+                Skills
+              </MenuLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuLink to='works' smooth={true}>
+                Works
               </MenuLink>
             </MenuItem>
             <MenuItem>
               <MenuLink to='contact' smooth={true} duration={1000}>
-                Контакты
+                Contacts
               </MenuLink>
             </MenuItem>
             <NavChangeTheme onClick={toggleTheme}>

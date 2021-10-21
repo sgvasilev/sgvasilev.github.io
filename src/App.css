@@ -10,9 +10,10 @@ html {
 }
 
 body {
-  font-family: 'Alegreya', serif;
+  font-family: 'Inconsolata', monospace;
   margin: 0;
   padding: 0;
+  letter-spacing: 3px;
 }
 
 body.preload * {
@@ -38,45 +39,99 @@ body.preload * {
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
 }
+/* //wrappers/////////////////////////////// */
 
 .left_wrapper {
+  margin: 0 10px;
   display: flex;
+  position: relative;
+  height: 75vh;
+  width: 70%;
   align-items: center;
-  height: 70vh;
+  background: inherit;
+  text-align: justify;
+}
+
+.right_wrapper {
+  margin: 0 10px;
+  display: flex;
+  position: absolute;
+  width: 55%;
+  align-items: center;
+  background: inherit;
+  text-align: justify;
+  right: 0;
+  top: 250px;
 }
 
 .border_style {
-  position: relative;
+  position: absolute;
   height: 70%;
-  width: 40%;
+  width: 100%;
   top: 100px;
 }
 .border_style__part {
   width: 100%;
 }
 .border_style span:nth-child(1) {
-  height: 5px;
+  height: 4px;
   position: absolute;
-  background: #3f3f3f;
-  left: 5%;
+  background: #66fcf1;
 }
 .border_style span:nth-child(2) {
-  width: 5px;
+  width: 4px;
   position: absolute;
-  background: #3f3f3f;
-  left: 5%;
+  background: #66fcf1;
+  top: 0;
+  left: 0;
+}
+.border_style span:nth-child(3) {
+  width: 4px;
+  position: absolute;
+  background: #66fcf1;
   top: 0;
   right: 0;
 }
-.border_style span:nth-child(3) {
-  height: 5px;
-  position: absolute;
-  background: #3f3f3f;
-  left: 5%;
-}
 .border_style span:nth-child(4) {
-  height: 5px;
+  height: 4px;
   position: absolute;
-  background: #3f3f3f;
-  left: 5%;
+  background: #66fcf1;
+  bottom: 0;
+}
+
+.project_details {
+  right: -50px;
+  top: 150px;
+  position: absolute;
+  background: inherit;
+  color: inherit;
+  z-index: 2;
+}
+.project_header {
+  background: inherit;
+  font-size: 1.5rem;
+}
+/* ///////////////////////////////// */
+/* //image section////////////////// */
+/* ///////////////////////////////// */
+/* ///////////////////////////////// */
+
+.image_details {
+  width: 100%;
+  z-index: 2;
+}
+
+.project_image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.nonevisible {
+  visibility: hidden;
+  transition: 0.5s linear;
+}
+@media screen and (max-width: 768px) {
+  .project_header {
+    font-size: 1rem;
+  }
 }

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link as LinkScroll } from "react-scroll";
+import styled from 'styled-components'
+import { Link as LinkScroll } from 'react-scroll'
 
 export const Navbar = styled.nav`
   height: 80px;
@@ -15,18 +15,17 @@ export const Navbar = styled.nav`
   @media screen and (max-width: 960px) {
     transition: 0.3s all ease;
   }
-`;
+`
 
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-
   width: 100%;
   padding: 0 25px;
   max-width: 1070px;
-`;
+`
 
 export const NavLogo = styled(LinkScroll)`
   color: inherit;
@@ -37,7 +36,7 @@ export const NavLogo = styled(LinkScroll)`
   text-decoration: none;
   align-items: center;
   font-weight: bold;
-`;
+`
 
 export const MobileIcon = styled.div`
   display: none;
@@ -52,7 +51,7 @@ export const MobileIcon = styled.div`
     font-size: 1.5rem;
     cursor: pointer;
   }
-`;
+`
 
 export const MenuMobile = styled.ul`
   display: flex;
@@ -63,7 +62,7 @@ export const MenuMobile = styled.ul`
   @media screen and (max-width: 768px) {
     display: none;
   }
-`;
+`
 
 export const MenuItem = styled.li`
   height: 80px;
@@ -72,7 +71,7 @@ export const MenuItem = styled.li`
   &:last-child {
     padding-right: 0;
   }
-`;
+`
 
 export const MenuLink = styled(LinkScroll)`
   display: flex;
@@ -81,11 +80,12 @@ export const MenuLink = styled(LinkScroll)`
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
+  letter-spacing: 0px;
 
   &.active {
     border-bottom: 3px solid #232323;
   }
-`;
+`
 
 export const NavChangeTheme = styled.button`
   display: flex;
@@ -95,4 +95,4 @@ export const NavChangeTheme = styled.button`
   border: none;
 
   transition: background 0.1s linear, color 0.1s linear;
-`;
+`

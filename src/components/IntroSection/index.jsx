@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import {
   IntroContainer,
@@ -10,23 +10,23 @@ import {
   TextContainer,
   ImageContainer,
   Container,
-} from './intro.elements';
+} from './intro.elements'
 
 const Intro = () => {
   return (
     <>
       <Container id='main'>
         <IntroContainer>
-          <IntroH1>Приветствую! Меня зовут Сергей</IntroH1>
+          <IntroH1>Welcome</IntroH1>
           <IntroContent>
             <TextContainer>
               <IntroP1>
-                Сайт: React + styled components + framer motion + javascript
+                .This: React + styled components + framer motion + javascript
               </IntroP1>
               <IntroP2>
-                О себе: интерес к computer science с рассказов Кевина Митника и
-                Криса Касперски, закончил аспирантуру в МИСиС в 2020 г., в
-                настоящее время изучаю React/JavaScript/TypeScript/flutter.
+                About me: finished postgraduate studies in material science at
+                NUST MISIS in 2020, currently searching job for frontend/backend
+                developer.
               </IntroP2>
             </TextContainer>
             <ImageContainer>
@@ -36,7 +36,7 @@ const Intro = () => {
         </IntroContainer>
       </Container>
     </>
-  );
-};
+  )
+}
 
-export default Intro;
+export default Intro
